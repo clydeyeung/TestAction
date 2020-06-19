@@ -1,10 +1,10 @@
 name: CI
 
 on: 
-  release:
-    types: # This configuration does not affect the page_build event above
-      - created
-   pull_request:    
+   release:
+     types: # This configuration does not affect the page_build event above
+       - created
+   pull_request:
 env:
   somevar: 'lastvar'
 
