@@ -27,9 +27,6 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
-show:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Is variable exported?
-        run: |
+    - name: Is variable exported?
+        run:|
           echo "${{ env.somevar }}
