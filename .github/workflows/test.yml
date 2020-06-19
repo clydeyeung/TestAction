@@ -4,6 +4,10 @@ on:
   release:
     types: # This configuration does not affect the page_build event above
       - created
+        
+env:
+  somevar: 'lastvar'
+
 jobs:
   build:
 
@@ -17,3 +21,9 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
+show:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Is variable exported?
+        run: |
+          echo "${{ env.somevar }}
