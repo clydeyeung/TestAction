@@ -1,10 +1,16 @@
 name: CI
 #update 1
-on: 
+#on: 
    #release:
    #  types: # This configuration does not affect the page_build event above
    #    - created
-   pull_request:
+   
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+     
 env:
   somevar: 'lastvar'
 
