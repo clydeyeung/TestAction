@@ -29,4 +29,4 @@ jobs:
         echo test, and deploy your project.
     - name: Is variable exported?
       run: |
-        echo "${{ env.somevar }}
+        echo "${{ env.somevar }}"
