@@ -30,3 +30,9 @@ jobs:
     - name: Is variable exported?
       run: |
         echo "${{ env.somevar }}"
+    - name: Init
+      id: Step1
+      run: echo "Test1" > Test1.txt
+    - name: show
+      id: Step2
+      run: echo ubuntu@$(cat Test1.txt)
